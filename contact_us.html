@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Head section-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="author" content="Danielle Fiene">
+        <title>Fishing Czech</title>
+        <link rel="icon" href="./Resources/Images/favicon.ico" type="image/x-icon">
+        <link href="./resources/CSS/style.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <!--Navigation bar section-->
+        <nav class="navigation">
+            <ul role="presentation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fishing">Fishing gallery</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="where_to_stay.html">Where to stay</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </nav>
+        <!-- Header section with h1 text-->
+        <header class="hero">
+        </header>
+        <!--Main section just filling up space-->
+        <main>
+            <h1 class="h1contact">Contact Us</h1><br><br><br>
+            <img class="image2" src="./resources/images/ponds2.png">
+            <form action="process.php" method="post">
+                <label class="label">Your name</label><br>
+                <input name="name" type="text" class="input" required autocomplete="off" /><br>
+                <label class="label">Your e-mail</label><br>
+                <input name="email" type="email" class="input" required maxlength="30" autocomplete="off" /><br>
+                <label class="label">Your message</label><br>
+                <textarea name="message" class="input"></textarea>
+                <br><br>
+                <input class="label" type="submit" name="submit" value="Send your message!"/>
+            </form><br><br><br><br><br><br>
+        </main>
+        <!--Footer section-->
+        <footer><p class="p2">&copy; Copyright 2024 FishingCzech.com | <a href="mailto:ffiene@worldviews.nl">Send us an email</a> | <a href="tel:+420602418918">+420 602 418 918</a> | Křinice 133, 550 01 Křinice</p></footer>
+         <!--Room for JavaScript file which I didn't use but someone else might want to-->
+        <script src="index.js"></script>
+    </body>
+
+</html>
