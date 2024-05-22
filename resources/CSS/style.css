@@ -91,11 +91,46 @@ p {
     background-color: #A7BEAE;
 }
 
+#submit2 {
+    color: #330000;
+    font-weight: bold;
+    font-size: 0.76em;
+    background-color: #A7BEAE;
+    border-radius: 5px;
+    border: 2px solid;
+    cursor: pointer;
+    padding: 10px;
+    float: right;
+}
+
+#submit2:hover {
+    background-color: #cb7a64;
+}
+
+/* Gallery page */
+
+.row1 {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 1.5%;
+}
+  
+.column1 {
+    flex-wrap: wrap;
+}
+
+
+/* location page */
+
 .map {
     margin-left: 5%;
     height: 600px;
     width: 600px;
 }
+
+/* where to stay page */
 
 .image {
     float: right;
@@ -115,6 +150,9 @@ p {
     width: 800px;
     height: 620px;
 }
+
+
+/* contact us page */
 
 .h1contact {
     text-align: left;
