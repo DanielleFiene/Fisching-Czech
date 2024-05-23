@@ -1,11 +1,15 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $name = $_POST['name'];
-  $email = $_POST['email'];
-  $message = $_POST['message'];
-
-  
-  $to = 'daniellefiene@hotmail.com';
+  $name = $_POST["name"];
+  $email = $_POST["email"];
+  $message = $_POST["message"];
+  $to = "daniellefiene@hotmail.com";
+  $header = "From: $email";
+  if(mail($to,$subject,$message,$headers)){
+    echo "Email sent";
+  }else{
+    echo "Email sending failed";
+  }
 
   $subject = 'Contact Form Submission';
 
@@ -17,7 +21,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
              'Email: ' . $email . "\n" .
              'Message: ' . $message;
 
-  mail($to, $subject, $message, $headers);
-  echo 'Thanks for contacting us!';
 }
 ?>
