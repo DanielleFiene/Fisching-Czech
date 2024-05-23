@@ -249,34 +249,68 @@ footer a:hover {
 /* Media queries */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
     h1 {
-        padding-left: 20px;
+        padding-left: 3%;
+        font-size: 1.7em;
     }
     .navigation ul {
         display: grid;
     }
+
+    p {
+        padding-left: 3%;
+        font-size: 1.4em;
+    }
+
+    #submit2 {
+        float: left;
+    }
+
+    .image {
+    width: 250px;
+    height: 200px;
+    margin: 5px;
+    padding: 5px;
+    float: left;
+    }
+
+    .image2 {
+        width: 250px;
+        height: 200px;
+        }
 }
 
-@media only screen and (min-width: 400px) and (max-width: 600px) {
+@media only screen and (min-width: 480px) and (max-width: 600px) {
      h1 {
-        padding-left: 20px;
+        padding-left: 5%;
+        font-size: 2.3em;
     }
     .navigation ul {
         display: grid;
+    }
+
+    p {
+        padding-left: 5%;
+        font-size: 2em;
     }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1000px) {
     h1 {
-        padding-left: 10%;
+        padding-left: 5%;
     }
     .navigation ul {
         display: grid;
+    }
+
+    .map {
+    height: 600px;
+    width: auto;
     }
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1500px) {
     h1 {
-        padding-left: 20%;
+        padding-left: 5%;
     }
 }
     
