@@ -8,7 +8,7 @@
 
   $recipient = "daniellefiene@hotmail.com";
 
-  mail($recipient, $subject, $message, $header) or die("Error!");
+  mail($recipient, $message, $header) or die("Error!");
 
   echo"message send";
 ?>
