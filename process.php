@@ -1,5 +1,6 @@
 <?php
-
+if(isset($_POST['submit']))
+{
   $name = $_POST['name'];
   $email = $_POST['email'];
   $message = $_POST['message'];
@@ -8,7 +9,18 @@
 
   $recipient = "daniellefiene@hotmail.com";
 
-  mail($recipient, $message, $header) or die("Error!");
+  if(mail($recipient, $message, $header))
+  {
+    $msg = "Mail sent";
+    
+    echo $msg;
+  }
 
-  echo"message send";
+  print "<p>Thanks $name</p>" ;
+}
+
+else {
+  echo "Sorry, that didn't work out!";
+}
+
 ?>
