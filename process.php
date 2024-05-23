@@ -1,25 +1,14 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $name = $_POST["name"];
-  $email = $_POST["email"];
-  $message = $_POST["message"];
-  $to = "daniellefiene@hotmail.com";
-  $header = "From: $email";
-  if(mail($to,$subject,$message,$headers)){
-    echo "Email sent";
-  }else{
-    echo "Email sending failed";
-  }
 
-  $subject = 'Contact Form Submission';
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $message = $_POST['message'];
+  
+  $mailheader = "From:".$name."<".$email.">\r\n";
 
-  $headers = "From: $email" . "\r\n" .
-             "Reply-To: $email" . "\r\n" .
-             'X-Mailer: PHP/' . phpversion();
+  $recipient = "daniellefiene@hotmail.com";
 
-  $message = 'Name: ' . $name . "\n" .
-             'Email: ' . $email . "\n" .
-             'Message: ' . $message;
+  mail($recipient, $subject, $message, $mailheader) or die("Error!");
 
-}
+  echo"message send";
 ?>
