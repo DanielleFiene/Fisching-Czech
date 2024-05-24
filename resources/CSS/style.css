@@ -41,7 +41,7 @@ body {
 
 /* Hero/header section */
 .hero {
-    background-image: url('../images/Ponds\(1\).png');
+    background-image: url('../images/ponds_small.png');
     background-size: cover;
     background-position: bottom center;
     height: 900px;
