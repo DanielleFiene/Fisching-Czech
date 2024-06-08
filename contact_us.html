@@ -31,13 +31,13 @@
         <main>
             <h1 class="h1contact">Contact Us</h1><br><br><br>
             <img class="image2" src="./resources/images/ponds2.png">
-            <form action="process.php" method="POST">
-                <label class="label">Your name</label><br>
-                <input name="name" type="text" class="input" required autocomplete="off" /><br>
-                <label class="label">Your e-mail</label><br>
-                <input name="email" type="email" class="input" required maxlength="30" autocomplete="off" /><br>
-                <label class="label">Your message</label><br>
-                <textarea name="message" class="input"></textarea>
+            <form action="mailto:info@fishingczech.com" method="POST">
+                <label for="name"class="label">Your name</label><br>
+                <input id="name" name="name"type="text" class="input" required autocomplete="off" /><br>
+                <label for="email" class="label">Your e-mail</label><br>
+                <input id="email" name="email" type="email" class="input" required maxlength="30" autocomplete="off" /><br>
+                <label for="message" class="label">Your message</label><br>
+                <textarea id="message" name="message" class="input"></textarea>
                 <br><br>
                 <input class="label" type="submit" name="submit" id="submit4" value="Send your message!"/>
             </form><br><br><br><br><br><br>
