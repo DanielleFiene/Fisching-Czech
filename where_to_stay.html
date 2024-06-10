@@ -27,14 +27,16 @@
 
         <!-- Header section-->
         <header class="hero">
+            <a href="#main" class="skip">Skip to main content</a>
+            <a href="footer" class="skip">Skip to footer</a>
         </header>
-
         <!--Main section-->
-        <main>
+        <main id="main">
             <article>
                 <section>
                   <h1>Holiday Homes</h1><br><br>
-                  <h2>Holiday home in Martínkovice</h2>
+                  <a href="#sonov" class="skip">Skip to holiday home in Šonov</a>
+                  <h2 id="martinkovice">Holiday home in Martínkovice</h2>
                     <img class="image" src="./resources/images/Martinkovice.jpg" alt="Holiday home Martínkovice">
                   <p>Nestled in the serene village of Martínkovice, this charming holiday home is the perfect retreat for groups of up to 12 people. <br>
                     Surrounded by picturesque landscapes and lush greenery, it offers a tranquil escape from the hustle and bustle of city life.<br>
@@ -48,8 +50,9 @@
                    </p>
                 </section>
             <br><br> 
-            <section>	
-                <h2>Holiday home in Šonov</h2>  
+            <section>
+                <a href="#martinkovice" class="skip">Skip to holiday home in Martínkovice</a>	
+                <h2 id="sonov">Holiday home in Šonov</h2>  
                 <img class="image" src="./resources/images/Sonov.jpg" alt="Holiday home in Šonov"> 
                 <p>
                 Located in the charming village of Šonov, <br>
@@ -63,13 +66,15 @@
                 <a href="contact_us.html" aria-label="button linking to contact page"><input type="submit" name="submit" id="submit2" value="Book your trip today!"/></a>   
                 <a href="sonov.html" aria-label="link to gallery with pictures of Šonov holiday house"><input type="submit" name="submit2" value="Click for more pictures!" id="submit3"/></a>
               </p>
+              <a href="#martinkovice" class="skip">Go back to holiday home in Martínkovice</a>
             </section> 
             </article>
             <br><br><br><br><br><br><br><br>
          </main>
 
         <!--Footer section-->
-        <footer>
+        <footer id="footer">
+            <a href="#main" class="skip">Go back to main content</a>
             <div class="footer-main">
                 <div class="footer-address">
                     <h3>Address<br>
