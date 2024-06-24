@@ -32,7 +32,7 @@ body {
     font-size: 1.4rem;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    padding: 25px;
+    padding: 15px;
 }
 
 .navigation a:hover {
@@ -100,8 +100,8 @@ body {
     background-image: url('../images/ponds_small.png');
     background-size: cover;
     background-position: bottom center;
-    height: 900px;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     box-shadow: 0 8px 6px #2d2d2d, 0 -4px 6px #2d2d2d;
 }
 
@@ -358,6 +358,13 @@ textarea {
 
 /* Media queries */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
     
      .navigation ul {
         display: grid;
@@ -406,9 +413,17 @@ textarea {
     height: 300px;
     width: 300px;
     }
+
 }
 
 @media only screen and (min-width: 480px) and (max-width: 600px) {
+    .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+    }
+
     .navigation ul {
         display: grid;
     }
