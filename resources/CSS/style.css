@@ -414,6 +414,12 @@ textarea {
     width: 300px;
     }
 
+    .column1 img {
+        display: grid;
+        width: 50px !important;
+        height: 30px !important;
+    }
+
 }
 
 @media only screen and (min-width: 480px) and (max-width: 600px) {
@@ -503,11 +509,24 @@ textarea {
     height: 600px;
     width: auto;
     }
+
+    .column1 img {
+        display: grid;
+        width: 130px !important;
+        height: 130px !important;
+        padding: 10px;
+    }
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1500px) {
     h1 {
         padding-left: 5%;
+    }
+
+    .column1 img {
+        display: grid;
+        width: 250px !important;
+        height: 230px !important;
     }
 }
     
