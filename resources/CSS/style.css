@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    z-index: 1;
 }
 
 /* body */
@@ -37,6 +38,61 @@ body {
 .navigation a:hover {
     color: #A43820;
     text-decoration: underline;
+}
+
+
+/* Breadcrumb nav link */
+.breadcrumb {
+    text-align: left;
+}
+
+.breadcrumb li {
+    float: left;
+}
+
+.breadcrumb a {
+    color: #fff;
+    background: darkcyan;
+    text-decoration: none;
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 15px;
+    padding: 5px 5px;
+}
+
+.breadcrumb a::before,
+.breadcrumb a::after {
+    content: "";
+    position: absolute;
+    border-color: darkcyan;
+    border-style: solid;
+    border-width: 15px 5px;
+}
+
+.breadcrumb a::before {
+    left: -10px;
+    border-left-color: transparent;
+}
+
+.breadcrumb a::after {
+    left: 100%;
+    border-color: transparent;
+    border-left-color: darkcyan;
+}
+
+.breadcrumb a:hover {
+    background-color: blue;
+}
+
+.breadcrumb a:hover::before {
+    border-color: blue;
+    border-left-color: transparent;
+}
+
+.breadcrumb a:hover::after {
+    border-left-color: blue;
 }
 
 /* Hero/header section */
@@ -153,6 +209,10 @@ p {
 
 /* Gallery page */
 
+img {
+    object-fit: cover;
+}
+
 .row1 {
     display: flex;
     justify-content: space-around;
@@ -250,7 +310,7 @@ textarea {
 }
 
 
-.footer-main {
+.footer-main { 
     display: flex;
     background-color: #A7BEAE;
     color: #330000;
@@ -263,7 +323,7 @@ textarea {
     width: 100%;
     text-align: center;
     font-size: 0.5em;
-    margin-left: opx;
+    margin-left: 0;
 }
 
 .footer-contact a {
