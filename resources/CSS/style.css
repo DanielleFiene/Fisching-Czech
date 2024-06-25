@@ -102,7 +102,7 @@ body {
     background-position: bottom center;
     height: 100vh;
     width: 100vw;
-    box-shadow: 0 8px 6px #2d2d2d, 0 -4px 6px #2d2d2d;
+    box-shadow: 0 -4px 6px #2d2d2d;
 }
 
 /* Main section */
@@ -117,7 +117,8 @@ h1 {
     color: #330000;
     letter-spacing: 0.05em;
     line-height: 1.5em;
-    box-shadow: 0 3px 6px #2d2d2d, 0 -4px 3px #2d2d2d;
+    box-shadow: 0 3px 6px #2d2d2d;
+    margin-top: 0;
 }
 
 h2 {
@@ -146,7 +147,7 @@ p {
 [type="submit"] {
     color: #330000;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1.2em;
     background-color: #cb7a64;
     border-radius: 5px;
     border: 2px solid;
@@ -194,7 +195,7 @@ p {
 #submit4 {
     color: #330000;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1.2em;
     background-color: #cb7a64;
     border-radius: 5px;
     border: 2px solid;
@@ -236,10 +237,10 @@ p {
     float: right;
     margin-left: 2%;
     margin-right: 5%;
-    padding-top: 75px;
     vertical-align: top;
     width: 800px;
     height: 620px;
+    padding-top: 1%;
 }
 
 .image2 {
