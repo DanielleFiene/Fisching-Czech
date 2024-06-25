@@ -4,13 +4,13 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
 
 /* body */
 body {
     background-color: #E7E8D1;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 /* Navigation bar */
@@ -101,7 +101,7 @@ body {
     background-image: url('../images/ponds_small.png');
     background-size: cover;
     background-position: bottom center;
-    height: 100vh;
+    height: 60vh;
     width: 100vw;
     box-shadow: 0 -4px 6px #2d2d2d;
 }
