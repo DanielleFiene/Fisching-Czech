@@ -193,22 +193,6 @@ p {
     background-color: #cb7a64;
 }
 
-#submit4 {
-    color: #330000;
-    font-weight: bold;
-    font-size: 1.2em;
-    background-color: #cb7a64;
-    border-radius: 5px;
-    border: 2px solid;
-    cursor: pointer;
-    padding: 10px;
-    margin-left: 15%;
-}
-
-#submit4:hover {
-    background-color: #A7BEAE;
-}
-
 /* Gallery page */
 
 .row1 {
@@ -244,33 +228,12 @@ p {
     padding-top: 1%;
 }
 
-.image2 {
-    float: right;
-    margin-right: 15%;
-    padding-top: 75px;
-    vertical-align: top;
-    width: 800px;
-    height: 620px;
-}
 
 
 /* contact us page */
 
-.h1contact {
-    text-align: left;
-    font-size: 3.5em;
-    background-color: #A7BEAE;
-    padding-left: 15%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    color: #330000;
-    letter-spacing: 0.05em;
-    line-height: 1.5em;
-    box-shadow: 0 3px 6px #2d2d2d, 0 -4px 3px #2d2d2d;
-}
-
 .label {
-    margin-left: 15%;
+    margin-left: 5%;
     text-align: left;
     font-size: 1.8em;
     color: #330000;
@@ -279,7 +242,7 @@ p {
 }
 
 .input {
-    margin-left:15%;
+    margin-left:5%;
     color: #330000;
     font-size: 1.3em;
     border-radius: 5px;
@@ -305,6 +268,32 @@ textarea {
     height: 350px;
     line-height: 150%;
     resize: vertical;
+}
+
+#submit4 {
+    color: #330000;
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: #cb7a64;
+    border-radius: 5px;
+    border: 2px solid;
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 5%;
+}
+
+#submit4:hover {
+    background-color: #A7BEAE;
+}
+
+
+.image2 {
+    float: right;
+    margin-right: 15%;
+    padding-top: 75px;
+    vertical-align: top;
+    width: 800px;
+    height: 620px;
 }
 
 /* footer section */
@@ -359,7 +348,7 @@ textarea {
 /* hyphenate for text around images and stuff */
 
 /* Media queries */
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 375px) {
 .hero {
     display: flex;
     justify-content: center;
@@ -381,7 +370,8 @@ textarea {
     }
    
      h2 {
-        font-size: 1.5em;
+        font-size: 1.3em;
+         margin-top: 180px
     }
 
     p {
@@ -390,25 +380,67 @@ textarea {
 
     #submit2 {
         float: left;
-        font-size: 0.5em;
+        font-size: 0.8em;
     }
 
     #submit3 {
         float: left;
-        font-size: 0.5em;
+        font-size: 0.8em;
     }
 
     .image {
-    width: 250px;
-    height: 200px;
+    width: 200px;
+    height: 150px;
     margin: 4%;
     padding: 5px;
     float: left;
     }
 
+    .label {
+    margin-left: 5%;
+    text-align: left;
+    font-size: 1.0em;
+    color: #330000;
+    letter-spacing: 0.05em;
+    line-height: 1.5em;
+}
+
+.input {
+    margin-left:5%;
+    color: #330000;
+    font-size: 1em;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 1px solid black;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 80%;
+    box-sizing: border-box;
+    outline: 0;
+    display: inline-block;
+    text-align: left;
+    position: relative;
+}
+
+.input:focus {
+    border: 2px solid #009900;
+}
+
+textarea {
+    height: 350px;
+    line-height: 150%;
+    resize: vertical;
+}
+
     .image2 {
     width: 250px;
     height: 200px;
+    margin-top: -120px;
+    margin-bottom: 25px;
+    float: left;
+    margin-left: 5%;
     }
     
     .map iframe {
@@ -424,7 +456,107 @@ textarea {
 
 }
 
-@media only screen and (min-width: 480px) and (max-width: 600px) {
+@media only screen and (min-width: 376px) and (max-width: 438px) {
+    .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+    }
+
+    .navigation ul {
+        display: grid;
+    }
+    
+    .navigation a {
+        font-size: 1.2em;
+    }
+    
+    h1 {
+        font-size: 1.7em;
+    }
+   
+     h2 {
+        font-size: 1.5em;
+         margin-top: 240px;
+    }
+
+    p {
+        font-size: 1.0em;
+    }
+    
+     .image {
+    width: 250px;
+    height: 200px;
+    margin: 4%;
+    padding: 5px;
+    float: left;
+    }
+
+    .label {
+    margin-left: 5%;
+    text-align: left;
+    font-size: 1.0em;
+    color: #330000;
+    letter-spacing: 0.05em;
+    line-height: 1.5em;
+}
+
+.input {
+    margin-left:5%;
+    color: #330000;
+    font-size: 1em;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 1px solid black;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 80%;
+    box-sizing: border-box;
+    outline: 0;
+    display: inline-block;
+    text-align: left;
+    position: relative;
+}
+
+.input:focus {
+    border: 2px solid #009900;
+}
+
+textarea {
+    height: 350px;
+    line-height: 150%;
+    resize: vertical;
+}
+
+    .image2 {
+    width: 330px;
+    height: 250px;
+    margin-top: -120px;
+    margin-bottom: 25px;
+    float: left;
+    margin-left: 5%;
+    }
+    
+    .map iframe {
+    height: 400px;
+    width: 400px;
+    }
+
+     #submit2 {
+        float: left;
+        font-size: 1em;
+    }
+
+    #submit3 {
+        float: left;
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 438px) and (max-width: 600px) {
     .hero {
         display: flex;
         justify-content: center;
@@ -460,14 +592,71 @@ textarea {
     float: left;
     }
 
+     form {
+        margin-top: 100px;
+    }
+    
+    .label {
+    margin-left: 5%;
+    text-align: left;
+    font-size: 1.0em;
+    color: #330000;
+    letter-spacing: 0.05em;
+    line-height: 1.5em;
+}
+
+.input {
+    margin-left:5%;
+    color: #330000;
+    font-size: 1em;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 1px solid black;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 80%;
+    box-sizing: border-box;
+    outline: 0;
+    display: inline-block;
+    text-align: left;
+    position: relative;
+}
+
+.input:focus {
+    border: 2px solid #009900;
+}
+
+textarea {
+    height: 350px;
+    line-height: 150%;
+    resize: vertical;
+}
+
     .image2 {
     width: 250px;
-    height: 200px;
+    height: 250px;
+    margin-top: -120px;
+    margin-bottom: 25px;
+    float: left;
+    margin-left: 5%;
     }
+
     
     .map iframe {
     height: 400px;
     width: 400px;
+    }
+
+     #submit2 {
+        float: left;
+        font-size: 1em;
+    }
+
+    #submit3 {
+        float: left;
+        font-size: 1em;
     }
 }
 
@@ -502,9 +691,55 @@ textarea {
     float: left;
     }
 
+     form {
+        margin-top: 100px;
+    }
+
+    .label {
+    margin-left: 5%;
+    text-align: left;
+    font-size: 1.0em;
+    color: #330000;
+    letter-spacing: 0.05em;
+    line-height: 1.5em;
+}
+
+.input {
+    margin-left:5%;
+    color: #330000;
+    font-size: 1em;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 1px solid black;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 50%;
+    box-sizing: border-box;
+    outline: 0;
+    display: inline-block;
+    text-align: left;
+    position: relative;
+}
+
+.input:focus {
+    border: 2px solid #009900;
+}
+
+textarea {
+    height: 350px;
+    line-height: 150%;
+    resize: vertical;
+}
+
     .image2 {
     width: 250px;
-    height: 200px;
+    height: 250px;
+    margin-top: -120px;
+    margin-bottom: 30px;
+    margin-left: 5%;
+    float: left;
     }
 
     .map {
@@ -530,6 +765,58 @@ textarea {
         width: 250px !important;
         height: 230px !important;
     }
+
+     form {
+        margin-top: 190px;
+    }
+
+    .label {
+    margin-left: 5%;
+    text-align: left;
+    font-size: 1.0em;
+    color: #330000;
+    letter-spacing: 0.05em;
+    line-height: 1.5em;
+}
+
+.input {
+    margin-left:5%;
+    color: #330000;
+    font-size: 1em;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 1px solid black;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 50%;
+    box-sizing: border-box;
+    outline: 0;
+    display: inline-block;
+    text-align: left;
+    position: relative;
+}
+
+.input:focus {
+    border: 2px solid #009900;
+}
+
+textarea {
+    height: 350px;
+    line-height: 150%;
+    resize: vertical;
+}
+
+    .image2 {
+    width: 350px;
+    height: 350px;
+    margin-top: -120px;
+    margin-bottom: 30px;
+    margin-left: 5%;
+    float: left;
+    }
+
 }
     
 
