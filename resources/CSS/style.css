@@ -133,13 +133,14 @@ h2 {
     line-height: 1.5em;
 }
 
+.h2index {
+    font-weight: bold;
+}
+
 p {
     text-align: left;
     font-size: 1.7em;
-    padding-left: 5%;
-    padding-right: 2%;
-    padding-top: 0%;
-    padding-bottom: 2%;
+    padding: 0 2% 2% 5%;
     color: #330000;
     letter-spacing: 0.05em;
     line-height: 1.5em;
