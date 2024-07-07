@@ -41,6 +41,11 @@ body {
     text-decoration: underline;
 }
 
+a:focus {
+    color: #A43820;
+    text-decoration: underline;
+}
+
 
 /* Breadcrumb nav link */
 .breadcrumb {
