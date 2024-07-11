@@ -46,6 +46,16 @@ a:focus {
     text-decoration: underline;
 }
 
+ a.active-link {
+    color: #A43820;
+    text-decoration: underline;
+}
+
+.current-link {
+    color: #A43820;
+    text-decoration: underline;
+}
+
 
 /* Breadcrumb nav link */
 .breadcrumb {
