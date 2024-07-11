@@ -42,11 +42,11 @@
             <form action="https://api.web3forms.com/submit" method="POST">
                 <input type="hidden" name="access_key" value="fa4a4a01-029f-45e0-82f3-78c764b97130">
                 <label for="name" class="label">Your name</label><br>
-                <input id="name" name="name" type="text" class="input" required autocomplete="off" /><br>
+                <input id="name" name="name" type="text" id="message" class="input" required autocomplete="off" /><br>
                 <label for="email" class="label">Your e-mail</label><br>
-                <input id="email" name="email" type="email" class="input" required maxlength="30" autocomplete="off" /><br>
+                <input id="email" name="email" type="email" class="input" id="email" pattern=".+@example\.com" size="30" required autocomplete="off" /><br>
                 <label for="message" class="label">Your message</label><br>
-                <textarea id="message" name="message" class="input"></textarea>
+                <textarea id="message" name="message" id="message" class="input"></textarea>
                  <!-- Honeypot Spam Protection -->
     <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                 <br><br>
