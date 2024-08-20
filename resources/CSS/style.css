@@ -229,6 +229,7 @@ p {
     margin: auto;
     height: 600px;
     width: 600px;
+    transition: transform 0.25s ease;
 }
 
 /* where to stay page */
@@ -241,6 +242,7 @@ p {
     width: 800px;
     height: 620px;
     padding-top: 1%;
+    transition: transform 0.25s ease;
 }
 
 
@@ -309,6 +311,7 @@ textarea {
     vertical-align: top;
     width: 800px;
     height: 620px;
+    transition: transform 0.25s ease;
 }
 
 /* footer section */
