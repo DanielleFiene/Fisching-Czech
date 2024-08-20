@@ -48,7 +48,13 @@
                 <label for="message" class="label">Your message</label><br>
                 <textarea id="message" name="message" id="message" class="input"></textarea>
                  <!-- Honeypot Spam Protection -->
-    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <!-- GDPR Checkbox -->
+                    <br>
+                    <label for="gdpr" class="label">
+                        <input type="checkbox" id="gdpr" name="gdpr" required>
+                        I agree to the processing of my personal data in accordance with the <a href="./resources/PDF/Privacy Policy.pdf" target="_blank">privacy policy</a>.
+                    </label>
                 <br><br>
                 <button class="label" type="submit" name="submit" id="submit4" value="Send your message!">Send your message!</button>
             </form><br><br><br><br><br><br>

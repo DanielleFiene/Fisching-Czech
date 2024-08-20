@@ -8,14 +8,15 @@
 
 /* body */
 body {
-    background-color: #E7E8D1;
+    background-color: #D2B48C;
     min-height: 100vh;
     overflow-x: hidden;
+    font-family: tahoma;
 }
 
 /* Navigation bar */
 .navigation {
-    background-color: #A7BEAE;
+    background-color: #00587A;
     box-sizing: border-box;
     overflow-y: auto;
     padding: 30px 0 30px;
@@ -28,7 +29,7 @@ body {
 
 .navigation a {
     text-decoration: none;
-    color: #330000;
+    color: #B0B5A1;
     font-weight: bold;
     font-size: 1.4rem;
     letter-spacing: 0.05em;
@@ -37,22 +38,22 @@ body {
 }
 
 .navigation a:hover {
-    color: #A43820;
+    color: #2E8B57;
     text-decoration: underline;
 }
 
 a:focus {
-    color: #A43820;
+    color: #2E8B57;
     text-decoration: underline;
 }
 
  a.active-link {
-    color: #A43820;
+    color: #2E8B57;
     text-decoration: underline;
 }
 
 .current-link {
-    color: #A43820;
+    color: #2E8B57;
     text-decoration: underline;
 }
 
@@ -124,13 +125,12 @@ a:focus {
 /* Main section */
 
 h1 {
-    text-align: left;
+    text-align: center;
     font-size: 3.5em;
-    background-color: #A7BEAE;
-    padding-left: 5%;
+    background-color: #00587A;
     padding-top: 0.5%;
     padding-bottom: 0.5%;
-    color: #330000;
+    color: #B0B5A1;
     letter-spacing: 0.05em;
     line-height: 1.5em;
     box-shadow: 0 3px 6px #2d2d2d;
@@ -138,9 +138,8 @@ h1 {
 }
 
 h2 {
-    text-align: left;
+    text-align: center;
     font-size: 2.0em;
-    padding-left: 5%;
     padding-top: 0%;
     padding-bottom: 0%;
     color: #330000;
@@ -153,60 +152,60 @@ h2 {
 }
 
 p {
-    text-align: left;
+    text-align: center;
     font-size: 1.7em;
-    padding: 0 2% 2% 5%;
+    padding: 0 2% 2%;
     color: #330000;
     letter-spacing: 0.05em;
     line-height: 1.5em;
 }
 
 [type="submit"] {
-    color: #330000;
+    color: white;
     font-weight: bold;
     font-size: 1.2em;
-    background-color: #cb7a64;
+    background-color: #2E8B57;
     border-radius: 5px;
     border: 2px solid;
     cursor: pointer;
     padding: 10px;
-    margin-left: 5%;
+    margin: auto 45%;
+    box-shadow:  0 8px 16px rgba(0, 0, 0, 0.6);
+    transition: transform 0.4s ease;
 }
 
 [type="submit"]:hover {
-    background-color: #A7BEAE;
+    background-color: #1B5334;
+    transform: scale(1.05);
+}
+
+[type="submit"]:hover {
+    background-color: #1B5334;
+    transform: scale(0.9);
 }
 
 #submit2 {
-    color: #330000;
+    color: white;
     font-weight: bold;
     font-size: 0.76em;
-    background-color: #cb7a64;
+    background-color: #2E8B57;
     border-radius: 5px;
     border: 2px solid;
     cursor: pointer;
     padding: 10px;
-    margin-left: 0%;
+    margin: auto 25%;
+    box-shadow:  0 8px 16px rgba(0, 0, 0, 0.6);
+    transition: transform 0.4s ease;
 }
 
 #submit2:hover {
-    background-color: #A7BEAE;
+    background-color: #1B5334;
+    transform: scale(1.05);
 }
 
-#submit3 {
-    color: #330000;
-    font-weight: bold;
-    font-size: 0.76em;
-    background-color: #A7BEAE;
-    border-radius: 5px;
-    border: 2px solid;
-    cursor: pointer;
-    padding: 10px;
-    float: right;
-}
-
-#submit3:hover {
-    background-color: #cb7a64;
+#submit2:active {
+    background-color: #1B5334;
+    transform: scale(0.9);
 }
 
 /* Gallery page */
@@ -227,7 +226,7 @@ p {
 /* location page */
 
 .map {
-    margin-left: 5%;
+    margin: auto;
     height: 600px;
     width: 600px;
 }
@@ -287,10 +286,10 @@ textarea {
 }
 
 #submit4 {
-    color: #330000;
+    color: white;
     font-weight: bold;
     font-size: 1.2em;
-    background-color: #cb7a64;
+    background-color: #2E8B57;
     border-radius: 5px;
     border: 2px solid;
     cursor: pointer;
@@ -299,7 +298,7 @@ textarea {
 }
 
 #submit4:hover {
-    background-color: #A7BEAE;
+    background-color: #1B5334;
 }
 
 
@@ -317,8 +316,8 @@ textarea {
 .footer-main {
     display: flex;
     position: relative;
-    background-color: #A7BEAE;
-    color: #330000;
+    background-color: #8B4513;
+    color: #D2B48C;
     text-align: center;
     padding: 15px;
     font-size: 1.5em;
@@ -333,14 +332,14 @@ textarea {
 
 .footer-contact a {
     display: inline-block;
-    color: #330000;
+    color: #D2B48C;
     padding: 10px;
     text-decoration: none;
     padding-bottom: 0;
 }
 
 .footer-contact a:hover {
-    color: #A43820;
+    color: #2E8B57;
     text-decoration: underline;
 }
 
