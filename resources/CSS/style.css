@@ -395,6 +395,10 @@ textarea {
         font-size: 1.0em;
     }
 
+    [type="submit"] {
+        margin-left: 35%;
+    }
+
     #submit2 {
         float: left;
         font-size: 0.8em;
