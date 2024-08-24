@@ -8,7 +8,7 @@
 
 /* body */
 body {
-    background-color: #D2B48C;
+    background-color: #E4D2BA;
     min-height: 100vh;
     overflow-x: hidden;
     font-family: tahoma;
@@ -29,7 +29,7 @@ body {
 
 .navigation a {
     text-decoration: none;
-    color: #B0B5A1;
+    color: #E8EDD8;
     font-weight: bold;
     font-size: 1.4rem;
     letter-spacing: 0.05em;
@@ -130,7 +130,7 @@ h1 {
     background-color: #00587A;
     padding-top: 0.5%;
     padding-bottom: 0.5%;
-    color: #B0B5A1;
+    color: #E8EDD8;
     letter-spacing: 0.05em;
     line-height: 1.5em;
     box-shadow: 0 3px 6px #2d2d2d;
@@ -285,6 +285,11 @@ textarea {
     height: 350px;
     line-height: 150%;
     resize: vertical;
+}
+
+.label span {
+    text-wrap: wrap;
+    display: inline-block;
 }
 
 #submit4 {
@@ -471,8 +476,9 @@ textarea {
 
     .column1 img {
         display: grid;
-        width: 50px !important;
-        height: 30px !important;
+        width: 80px !important;
+        height: 50px !important;
+        object-fit: cover;
     }
 
 }
@@ -495,6 +501,7 @@ textarea {
     
     h1 {
         font-size: 1.7em;
+        padding: 2px;
     }
    
      h2 {
@@ -574,6 +581,14 @@ textarea {
     #submit3 {
         float: left;
         font-size: 1em;
+    }
+
+    .column1 img {
+    display: grid;
+    width: 100px !important;
+    height: 70px !important;
+    padding: 5px;
+    object-fit: cover;
     }
 }
 
@@ -679,6 +694,14 @@ textarea {
         float: left;
         font-size: 1em;
     }
+
+        .column1 img {
+    display: grid;
+    width: 120px !important;
+    height: 90px !important;
+    padding: 5px;
+    object-fit: cover;
+    }
 }
 
 
@@ -725,6 +748,10 @@ textarea {
     line-height: 1.5em;
 }
 
+    .label span {
+        margin-left: 5%
+    }
+
 .input {
     margin-left:5%;
     color: #330000;
@@ -768,11 +795,12 @@ textarea {
     width: auto;
     }
 
-    .column1 img {
-        display: grid;
-        width: 130px !important;
-        height: 130px !important;
-        padding: 10px;
+        .column1 img {
+    display: grid;
+    width: 150px !important;
+    height: 100px !important;
+    padding: 5px;
+    object-fit: cover;
     }
 }
 
@@ -838,8 +866,25 @@ textarea {
     float: left;
     }
 
+         .column1 img {
+    display: grid;
+    width: 270px !important;
+    height: 180px !important;
+    padding: 10px;
+    object-fit: cover;
+    }
+
 }
-    
+
+@media only screen and (min-width: 1500px) {
+    .column1 img {
+    display: grid;
+    width: 350px !important;
+    height: 250px !important;
+    padding: 10px;
+    object-fit: cover;
+    }
+}
 
 @media print {
     nav {
