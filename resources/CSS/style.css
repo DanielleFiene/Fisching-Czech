@@ -162,6 +162,7 @@ p {
 
 [type="submit"] {
     color: white;
+    text-decoration: none;
     font-weight: bold;
     font-size: 1.2em;
     background-color: #2E8B57;
