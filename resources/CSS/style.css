@@ -176,17 +176,22 @@ p {
 }
 
 [type="submit"]:hover {
+    text-decoration: none;
+    color: white;
     background-color: #1B5334;
     transform: scale(1.05);
 }
 
-[type="submit"]:hover {
+[type="submit"]:active {
+    color: white;
+    text-decoration: none;
     background-color: #1B5334;
     transform: scale(0.9);
 }
 
 #submit2 {
     color: white;
+    text-decoration: none;
     font-weight: bold;
     font-size: 0.76em;
     background-color: #2E8B57;
@@ -194,17 +199,19 @@ p {
     border: 2px solid;
     cursor: pointer;
     padding: 10px;
-    margin: auto 25%;
+    margin: auto;
     box-shadow:  0 8px 16px rgba(0, 0, 0, 0.6);
     transition: transform 0.4s ease;
 }
 
 #submit2:hover {
+    text-decoration: none;
     background-color: #1B5334;
     transform: scale(1.05);
 }
 
 #submit2:active {
+    text-decoration: none;
     background-color: #1B5334;
     transform: scale(0.9);
 }
@@ -406,12 +413,6 @@ textarea {
     }
 
     #submit2 {
-        float: left;
-        font-size: 0.8em;
-    }
-
-    #submit3 {
-        float: left;
         font-size: 0.8em;
     }
 
@@ -575,12 +576,6 @@ textarea {
     }
 
      #submit2 {
-        float: left;
-        font-size: 1em;
-    }
-
-    #submit3 {
-        float: left;
         font-size: 1em;
     }
 
@@ -687,16 +682,11 @@ textarea {
     }
 
      #submit2 {
-        float: left;
-        font-size: 1em;
+    font-size: 1em;
     }
 
-    #submit3 {
-        float: left;
-        font-size: 1em;
-    }
 
-        .column1 img {
+    .column1 img {
     display: grid;
     width: 120px !important;
     height: 90px !important;
