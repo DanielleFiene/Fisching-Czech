@@ -230,6 +230,10 @@ p {
     flex-wrap: wrap;
 }
 
+.column1 img {
+    cursor: pointer;
+}
+
 
 /* location page */
 
